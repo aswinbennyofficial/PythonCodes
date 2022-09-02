@@ -1,0 +1,20 @@
+num1=int(input("Enter First number"))
+num2=int(input("Enter the second number"))
+print("Choose one")
+print("1. sum")
+print("2. substraction")
+print("3. multiplication")
+print("4. Division")
+choice=int(input())
+
+if choice==1:
+    print("Sum of",num1,"and",num2,"is", num1+num2)
+elif choice==2:
+    print("Division of",num1,"and",num2,"is", num1-num2)
+elif choice==3:
+    print("Multiplication of",num1,"and",num2,"is", num1*num2)
+elif choice==4:
+    print("Division of",num1,"and",num2,"is", num1/num2)
+else:
+    print("wrong choice")
+    
