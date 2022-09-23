@@ -1,0 +1,14 @@
+a=input()
+
+r1=int(a[0:2])
+r2=int(a[2:4])
+r3=int(a[4:8])
+
+
+print(r1)
+print(r2)
+print(r3)
+
+
+s=r1+r2+r3
+print(s)
