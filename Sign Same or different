@@ -1,0 +1,12 @@
+a=int(input())
+b=int(input())
+
+if ((a>>31) == (b>>31)):
+    print("Same sign")
+else:
+    print("Different sign")
+    
+#n>>31 will give -1 for negative numbers and 0 for others
+
+    
+
