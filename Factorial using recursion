@@ -1,0 +1,14 @@
+
+def rec(n,s):
+    if n==1:
+        return s
+    s=s*n
+    return rec(n-1,s)
+    
+n=int(input("Enter number: "))
+print(rec(n,1))
+
+
+    
+    
+    
