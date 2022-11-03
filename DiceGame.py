@@ -6,7 +6,7 @@ score=0
 name=input("   Enter your name: ")
 
 print("   Welcome {} to the dice game!!!".format(name))
-print("\n \n")
+print("   -------------------------- \n")
 
 while roll_again=="":
     n=int(input("Input number: "))
