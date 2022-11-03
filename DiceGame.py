@@ -1,16 +1,18 @@
 import random
 
 roll_again="Y"
+score=0
 
-while roll_again=="Y" or roll_again=="y" or roll_again=="Yes" or roll_again=="yes":
+while roll_again=="":
     n=int(input("Input number: "))
     r=random.randint(1,6)
     print("Dice shows: ",r)
     if ( r== n):
+        score+=1
+        print("Congrats. Your score is",score)
         
-        print("Congrats")
     else:
-        print("Sorry , You are wrong")
+        print("Sorry , You are wrong. Your score is",score)
     
-    print("Press Y to try again")
+    print("Press Enter to try again or press N to exit")
     roll_again=input()
