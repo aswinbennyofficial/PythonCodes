@@ -1,6 +1,6 @@
 import random
 
-roll_again="Y"
+roll_again=""
 score=0
 
 while roll_again=="":
@@ -16,3 +16,5 @@ while roll_again=="":
     
     print("Press Enter to try again or press N to exit")
     roll_again=input()
+    
+print("Your total score is:",score)
