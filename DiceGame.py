@@ -3,24 +3,26 @@ import random
 roll_again=""
 score=0
 
-name=input("   Enter your name: ")
+name=input("Enter your name: ")
 
-print("   Welcome {} to the dice game!!!".format(name))
-print("   -------------------------- \n")
+print("\nWelcome {} to the dice game!!!".format(name))
+print("------------------------------ \n")
 
 while roll_again=="":
-    n=int(input("Input number: "))
+    n=int(input("    Predict the number: "))
     r=random.randint(1,6)
-    print("Dice shows: ",r)
+    print("    Dice shows:        ",r,"\n")
     if ( r== n):
         score+=1
-        print("  Congrats. Your score is",score)
+        print("    Congrats. Your score is",score)
         
     else:
-        print("  Sorry , You are wrong. Your score is",score)
+        print("    Sorry, You are wrong. Your score is",score)
     
     print("\n")
-    print("Press Enter to try again or press N to exit: ")
+    print(">>> Press Enter to try again or press N to exit: ")
     roll_again=input()
     
-print("Your total score is:",score)
+print("\n   ------------------------------ ")    
+print("   ",name,"Your total score is:",score)
+
