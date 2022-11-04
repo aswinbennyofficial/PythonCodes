@@ -3,7 +3,7 @@ import random
 roll_again=""
 score=0
 
-name=input("Enter your name: ")
+name=input(">>>Enter your name: ")
 
 print("\nWelcome {} to the dice game!!!".format(name))
 print("------------------------------ \n")
