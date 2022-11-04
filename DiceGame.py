@@ -1,11 +1,24 @@
+
 import random
 
 roll_again=""
 score=0
 
+print(r"""  
+  ____
+ /\' .\    _____
+/: \___\  / .  /\
+\' / . / /____/..\
+ \/___/  \'  '\  /
+          \'__'\/ 
+                  """ )
+
 name=input(">>>Enter your name: ")
 
+
+
 print("\nWelcome {} to the dice game!!!".format(name))
+
 print("------------------------------ \n")
 
 while roll_again=="":
@@ -26,3 +39,6 @@ while roll_again=="":
 print("\n   ------------------------------ ")    
 print("   ",name,"Your total score is:",score)
 
+
+    
+  
