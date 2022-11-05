@@ -22,10 +22,14 @@ print("\nWelcome {} to the dice game!!!".format(name))
 print("------------------------------ \n")
 
 while roll_again=="":
-    n=int(input("    Predict the number: "))
+    n=input("    Predict the number: ")
+    
+    if not(49<=ord(n)<=54):
+        print("    invalid input. Choose range between 1 and 6")
+        break
     r=random.randint(1,6)
     print("    Dice shows:        ",r,"\n")
-    if ( r== n):
+    if ( r== int(n)):
         score+=1
         print("    Congrats. Your score is",score)
         
