@@ -6,7 +6,7 @@ try_again="Y"
 attempts=0
 
 
-current_time=str(datetime.datetime.now())
+current_time=str(datetime.datetime.now().strftime("%H:%M:%S"))
 print("Current time is: ",current_time)
 with open('RandGameFilez.txt','a') as f:
     print("Game started at "+current_time,file=f)
