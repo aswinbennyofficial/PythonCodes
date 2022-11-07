@@ -20,14 +20,14 @@ while try_again=="Y":
     if n==rand:
         current_time=str(datetime.datetime.now())
         attempts+=1
-        print("Congrats",attempts)
+        print("Congrats")
         with open('RandGameFilez.txt','a') as f:
             print("attempt "+str(attempts)+", Your Guess was at "+current_time,file=f)
         try_again=""
     else:
         current_time=str(datetime.datetime.now())
         attempts+=1
-        print("try again",attempts)
+        print("wrong try again")
         with open('RandGameFilez.txt','a') as f:
             print("attempt "+str(attempts)+", Your Guess was at "+current_time,file=f)
         
